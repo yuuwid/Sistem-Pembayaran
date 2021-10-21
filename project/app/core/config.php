@@ -3,7 +3,7 @@
 // constanta folder App
 define('APP_ROOT', dirname(__FILE__));
 // Url
-define('URL', 'http://localhost/phpmvc/Sistem%20Pembayaran');
+define('URL', 'http://localhost/phpmvc/Sistem-Pembayaran/project');
 // constanta folder public
 define('PUBLIC_URL', URL.'/public');
 
