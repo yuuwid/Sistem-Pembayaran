@@ -1,0 +1,305 @@
+/* additional background bootstrap */
+.bg-coral {
+    background-color: #ff7f50 !important;
+}
+
+.bg-spring {
+    background-color: springgreen !important;
+}
+
+.bg-flowerblue {
+    background-color: cornflowerblue !important;
+}
+
+.bg-midnight {
+    background-color: midnightblue !important;
+}
+
+.bg-skyblue {
+    background-color: skyblue !important;
+}
+
+.bg-gold {
+    background-color: gold !important;
+}
+
+.bg-maroon {
+    background-color: maroon !important;
+}
+
+.bg-violet {
+    background-color: violet !important;
+}
+
+
+.hover-coral:hover {
+    background-color: #ff7f50 !important;
+}
+
+.hover-spring:hover {
+    background-color: springgreen !important;
+}
+
+.hover-flowerblue:hover {
+    background-color: cornflowerblue !important;
+}
+
+.hover-midnight:hover {
+    background-color: midnightblue !important;
+}
+
+.hover-skyblue:hover {
+    background-color: skyblue !important;
+}
+
+.hover-gold:hover {
+    background-color: gold !important;
+}
+
+.hover-maroon:hover {
+    background-color: maroon !important;
+}
+
+.hover-violet:hover {
+    background-color: violet !important;
+}
+
+/* additional text color bootstrap */
+.text-coral {
+    color: #ff7f50 !important;
+}
+
+.text-spring {
+    color: springgreen !important;
+}
+
+.text-flowerblue {
+    color: cornflowerblue !important;
+}
+
+.text-midnight {
+    color: midnightblue !important;
+}
+
+.text-skyblue {
+    color: skyblue !important;
+}
+
+.text-gold {
+    color: gold !important;
+}
+
+.text-maroon {
+    color: maroon !important;
+}
+
+.text-violet {
+    color: violet !important;
+}
+
+
+
+.link-hover-coral:hover {
+    color: #ff7f50 !important;
+}
+
+.link-hover-spring:hover {
+    color: springgreen !important;
+}
+
+.link-hover-flowerblue:hover {
+    color: cornflowerblue !important;
+}
+
+.link-hover-midnight:hover {
+    color: midnightblue !important;
+}
+
+.link-hover-skyblue:hover {
+    color: skyblue !important;
+}
+
+.link-hover-gold:hover {
+    color: gold !important;
+}
+
+.link-hover-maroon:hover {
+    color: maroon !important;
+}
+
+.link-hover-violet:hover {
+    color: violet !important;
+}
+
+.link-hover-white:hover {
+    color: white !important;
+}
+
+
+/* additional button color bootstrap */
+.btn-coral {
+    color: #fff;
+    background-color: #ff7f50;
+    border-color: #ff7f50;
+}
+.btn-coral:hover {
+    color: #fff;
+    background-color: #f88d67;
+    border-color: #f75a22;
+}
+
+.btn-spring {
+    color: #fff;
+    background-color: #00ff7f;
+    border-color: #00ff7f;
+}
+.btn-spring:hover {
+    color: #fff;
+    background-color: #26fa90;
+    border-color: #03d66c;
+}
+
+.btn-flowerblue {
+    color: #fff;
+    background-color: #6495ed;
+    border-color: #6495ed;
+}
+.btn-flowerblue:hover {
+    color: #fff;
+    background-color: #7ca6f3;
+    border-color: #447de7;
+}
+
+.btn-midnight {
+    color: #fff;
+    background-color: #191970;
+    border-color: #191970;
+}
+.btn-midnight:hover {
+    color: #fff;
+    background-color: #262694;
+    border-color: #0f0f69;
+}
+
+.btn-skyblue {
+    color: #fff;
+    background-color: #87ceeb;
+    border-color: #87ceeb;
+}
+.btn-skyblue:hover {
+    color: #fff;
+    background-color: #a7ddf3;
+    border-color: #5db4d6;
+}
+
+.btn-gold {
+    color: #fff;
+    background-color: #ffd700;
+    border-color: #ffd700;
+}
+.btn-gold:hover {
+    color: #fff;
+    background-color: #f1d42f;
+    border-color: #c2a505;
+}
+
+.btn-maroon {
+    color: #fff;
+    background-color: #800000;
+    border-color: #800000;
+}
+.btn-maroon:hover {
+    color: #fff;
+    background-color: #ac0c0c;
+    border-color: #5c0101;
+}
+
+.btn-violet {
+    color: #fff;
+    background-color: #ee82ee;
+    border-color: #ee82ee;
+}
+.btn-violet:hover {
+    color: #fff;
+    background-color: #ffaeff;
+    border-color: #ce53ce;
+}
+
+
+
+/* additional icons util bootstrap */
+
+.bi-sm {
+    font-size: small;
+}
+
+.bi-md {
+    font-size: medium;
+}
+
+.bi-lg {
+    font-size: large;
+}
+
+.bi-xlg {
+  font-size: x-large;
+}
+
+.bi-1x {
+    font-size: 1rem;
+}
+
+.bi-2x {
+    font-size: 2rem;
+}
+
+.bi-3x {
+    font-size: 3rem;
+}
+
+.bi-4x {
+    font-size: 4rem;
+}
+
+.bi-5x {
+    font-size: 5rem;
+}
+
+.bi-6x {
+    font-size: 6rem;
+}
+
+
+
+/* Font Family */
+
+.font-sans-serif {
+    font-family: Arial, sans-serif;
+}
+
+.font-serif{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.font-lucida {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.font-avanta {
+    font-family: 'Avanta Garde';
+}
+
+.font-lucida-console {
+    font-family: 'Lucida Console';
+}
+
+.font-lucida-handwriting {
+    font-family: 'Lucida Handwriting';
+}
+
+
+
+.border-midnight {
+    border-color: #191970;
+}
+
