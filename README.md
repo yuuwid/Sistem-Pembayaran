@@ -1,5 +1,15 @@
 # Sistem Pembayaran BPP & Non-BPP
 
+
+### Collaborator 
+| NPM  | Nama | Github |
+| --- | --- | --- |
+| 06.2020.1.07266  | WAHYU WIDYANTO  | [yuuwid](https://github.com/yuuwid) |
+| 06.2020.1.07290  | DANU SEPTI ADI  | [danuseptiadi](https://github.com/danuseptiadi) |
+| 06.2020.1.07289  | HIRDHAN FARHAN ANTAMA  | [hirdhan](https://github.com/hirdhan) |
+
+<br>
+
 ### Instalasi
 1. **Clone** atau **download** repository ini
 2. Salin semua file dan folder yang ada di dalam folder **_project_** kedalam htdocs xampp anda
@@ -20,6 +30,7 @@
     define('DB_PASS', '');
     ```
 <br>
+
 
 ### Halaman Website
 1. **Login**
