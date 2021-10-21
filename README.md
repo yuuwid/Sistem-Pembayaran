@@ -1,13 +1,14 @@
 # Sistem Pembayaran BPP & Non-BPP
 
 ### Instalasi
-1. Clone atau download repository ini
-2. Salin semua file dan folder yang ada di dalam folder project kedalam htdocs xampp anda
+1. **Clone** atau **download** repository ini
+2. Salin semua file dan folder yang ada di dalam folder **_project_** kedalam htdocs xampp anda
 3. Buat database mysql baru dengan nama **_sistem_pembayaran_**
 4. Kemudian import file **sistem_pembayaran.sql** ke dalam database anda
 4. Buka file **config.php** yang ada didalam folder **_app/core_**
 5. Edit bagian ini dengan posisi dari project anda terhadap folder htdocs
     ``` php
+    // Url
     define('URL', 'http://localhost/{nama_folder_project}');
     ```
     dan bagian koneksi ke database sesuaikan dengan configurasi xampp anda
