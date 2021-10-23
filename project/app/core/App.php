@@ -7,6 +7,11 @@ class App {
     private $_method = 'index';
     private $_params = [];
 
+
+    /*
+        ROUTING the URL
+        webapp_url/{controller}/{method_controller}/{data}
+    */
     public function __construct(){
         
         if (!$url = $this->getUrl()){
@@ -38,6 +43,11 @@ class App {
         call_user_func_array([$this->_controller, $this->_method], $this->_params);
     }
 
+
+
+    /*
+        GET URL and SANITIZE for Routing
+    */
     private function getUrl(){
         if (isset($_GET["url"])){
             $url = rtrim($_GET["url"], '/');

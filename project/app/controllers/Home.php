@@ -2,6 +2,8 @@
 
 class Home extends Controller implements ControllerInterface {
 
+
+    
     public function index(){
         if (!Authentication::getLogged()) {
             Redirect::to("login");
@@ -26,6 +28,9 @@ class Home extends Controller implements ControllerInterface {
         Session::drop("logged");
         Redirect::to("login");
     }
+
+
+
 
     
     public function notfound(){

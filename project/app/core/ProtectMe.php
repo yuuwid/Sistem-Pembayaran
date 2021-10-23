@@ -1,6 +1,8 @@
 <?php 
 
 
+// DEVELOP
+
 class ProtectMe {
     private static $token = "";
 
