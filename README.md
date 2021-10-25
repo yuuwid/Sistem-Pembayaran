@@ -39,4 +39,4 @@
 
 2. **Dashboard (Sementara)**
 
-    ![Dashboard](/screenshot/dashboard_img_2.png)
+    ![Dashboard](/screenshot/dashboard_img.png)

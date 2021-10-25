@@ -9,7 +9,7 @@
         </div>
 
         <ul class="list-unstyled components">
-            <img src="<?= PUBLIC_URL ?>/images/mahasiswa/Foto Mhs B 2 .jpg" class="border border-white border-rounded border-2" alt="" style="width: 92%; height: 375px; margin: 10px; margin-bottom: 20px;">
+            <img src="<?= PUBLIC_URL ?>/images/mahasiswa/<?= $data['user']['foto'] ?>" class="border border-white border-rounded border-2" alt="" style="width: 92%; height: 375px; margin: 10px; margin-bottom: 20px;">
             
             <li>
                 <a href="<?= URL ?>"><span class="bi bi-house"></span> Home</a>
@@ -61,8 +61,24 @@
 
 
         <div class="container ps-5 pe-5">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat voluptatibus accusantium aperiam eveniet alias dolorum dolore nobis quas sunt non cupiditate tempore quisquam minima, voluptas iure quia omnis tempora animi eos dolor doloribus molestias molestiae? Soluta obcaecati ab animi fugiat rem neque temporibus sapiente, blanditiis reprehenderit vero sint vitae, sequi quia magnam sed asperiores eligendi quas aut tenetur possimus porro nesciunt. Quis, voluptatem. At quia possimus deleniti corrupti, veniam dolore quo corporis, cum eligendi dignissimos fugit? In repudiandae beatae id nulla, deleniti odio sint non amet aliquid ipsam, dolores, ipsa alias quis minima eum iure excepturi qui possimus! Ad deleniti incidunt adipisci sunt totam explicabo quo ullam earum mollitia sit! Culpa voluptatem excepturi tempora suscipit? Recusandae, omnis fugit. Sit fuga ipsum sunt eaque aspernatur voluptates, aut magni vel molestiae, placeat, amet soluta? Eius laudantium explicabo voluptas quae fugiat obcaecati perspiciatis architecto unde quo dicta, optio vitae alias suscipit temporibus nihil possimus sit distinctio sunt doloribus. Aliquam odit voluptatem atque nihil rem fugiat molestias dignissimos ipsam in quasi, aut repellat ut excepturi mollitia incidunt optio aliquid facere consequuntur eius placeat quas nemo iure. Error, hic. Doloribus neque, inventore velit adipisci magnam dolorum quia tempore et veniam exercitationem impedit quis dolore laudantium.
-
+            <h3>Selamat Datang, <?= $data['user']['nama'] ?></h3>
+            
+            <table class="table">
+                <tr>
+                    <td>NPM</td>
+                    <td><?= $data['user']['npm'] ?></td>
+                </tr>
+                <tr>
+                    <td>Jurusan</td>
+                    <td><?= $data['user']['jurusan'] ?></td>
+                </tr>
+                <tr>
+                    <td>Tunggakan</td>
+                    <td>Rp. <?= Generate::rupiah($data['user']['tunggakan']) ?></td>
+                </tr>
+            </table>
+            
+            
             </p>
         </div>
 
