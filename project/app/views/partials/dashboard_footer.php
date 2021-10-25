@@ -1,5 +1,8 @@
 <?php ?>
 
+</div>
+
+</div>
 
 <script src="<?= URL ?>/public/jquery/jquery-3.6.0.min.js"></script>
 

@@ -16,9 +16,10 @@ class Home extends Controller implements ControllerInterface {
             
         ];
 
-        $this->view('home/dashboard_header', $data);
+        $this->view('partials/dashboard_header', $data);
+        $this->view('partials/dashboard_sidebar', $data);
         $this->view('home/index', $data);
-        $this->view('home/dashboard_footer');
+        $this->view('partials/dashboard_footer');
     }
 
 
