@@ -12,12 +12,13 @@ class Home extends Controller implements ControllerInterface {
 
         $data = [
             "title" => 'Home',
+            'user' => Authentication::getUser(),
+            
         ];
 
-        $this->view('partials/main_header', $data);
-        $this->view("partials/main_navbar");
+        $this->view('home/dashboard_header', $data);
         $this->view('home/index', $data);
-        $this->view('partials/footer');
+        $this->view('home/dashboard_footer');
     }
 
 

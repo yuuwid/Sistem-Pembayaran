@@ -108,7 +108,7 @@ define('COOKIE_DEFAULT_EXP', 7 * 86400);
     KEY for REMEMBER ME feature
     the key will be convert to COOKIE
 */
-define('KEY_REMEMBER_ME', 'logged')
+define('KEY_REMEMBER_ME', 'logged');
 
 
 

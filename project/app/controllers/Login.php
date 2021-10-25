@@ -12,8 +12,8 @@ class Login extends Controller implements ControllerInterface {
             'title' => "LOGIN",
         ];
 
-        $this->view("partials/main_header", $data);
-        $this->view("login/navbar");
+        // $this->view("partials/main_header", $data);
+        $this->view("login/login_header", $data);
         $this->view("login/index");
         $this->view("partials/footer");
     }
@@ -55,7 +55,7 @@ class Login extends Controller implements ControllerInterface {
 
 
         $this->view("partials/main_header", $data);
-        $this->view("register/navbar");
+        // $this->view("register/navbar");
         $this->view("register/index", $data);
         $this->view("partials/footer");
     }
