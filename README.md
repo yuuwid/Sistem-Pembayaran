@@ -35,8 +35,8 @@
 ### Halaman Website
 1. **Login**
 
-    ![Login](/screenshot/login_img.png)
+    ![Login](/screenshot/login_img_2.png)
 
 2. **Dashboard (Sementara)**
 
-    ![Dashboard](/screenshot/dashboard_img.png)
+    ![Dashboard](/screenshot/dashboard_img_2.png)
