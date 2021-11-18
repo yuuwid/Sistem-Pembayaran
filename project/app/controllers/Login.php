@@ -60,15 +60,5 @@ class Login extends Controller implements ControllerInterface {
         $this->view("partials/footer");
     }
 
-    public function notfound(){
-        $data = [
-			'title' => 'NotFound'
-		];
-
-		$this->view('partials/main_header', $data);
-		$this->view('notfound/index', $data);
-		$this->view('partials/footer');
-    }
-
 
 }

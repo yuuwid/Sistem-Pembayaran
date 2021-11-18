@@ -31,17 +31,4 @@ class Home extends Controller implements ControllerInterface {
         Redirect::to("login");
     }
 
-
-
-
-    
-    public function notfound(){
-        $data = [
-            'title' => 'Home | NotFound'
-        ];
-
-        $this->view('partials/main_header', $data);
-        $this->view('notfound/index', $data);
-        $this->view('partials/footer');
-    }
 }

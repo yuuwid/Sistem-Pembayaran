@@ -9,13 +9,13 @@
         </div>
 
         <ul class="list-unstyled components">
-            <img src="<?= PUBLIC_URL ?>/images/mahasiswa/<?= $data['user']['foto'] ?>" class="border border-white border-rounded border-2" alt="" style="width: 92%; height: 375px; margin: 10px; margin-bottom: 20px;">
+            <img src="<?= PUBLIC_URL ?>/images/mahasiswa/<?= $data['user']['foto'] ?>" class="border border-white border-rounded border-2" alt="" style="width: 92%; height: 300px; margin: 10px; margin-bottom: 20px;">
 
             <li>
                 <a href="<?= URL ?>"><span class="bi bi-house"></span> Home</a>
             </li>
             <li>
-                <a href="<?= URL ?>"><span class="bi bi-wallet2"></span> Pembayaran BPP</a>
+                <a href="<?= URL ?>/pembayaranbpp"><span class="bi bi-wallet2"></span> Pembayaran BPP</a>
             </li>
             <li>
                 <a href="<?= URL ?>"><span class="bi bi-wallet"></span> Pembayaran Non-BPP</a>
