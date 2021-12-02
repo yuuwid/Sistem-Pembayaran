@@ -31,7 +31,16 @@ class Date {
 
 
     public static function month(){
-        return Date::now('m');
+        return Date::now('F');
+    }
+
+
+    public static function rangeMonth($range){
+        $month = [];
+        for ($i=0; $i <= $range; $i++) { 
+            $month[] = date('F Y', strtotime("+{$i} month", strtotime(Date::now())));
+        }
+        return $month;
     }
 
 

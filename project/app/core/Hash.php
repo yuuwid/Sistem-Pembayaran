@@ -2,9 +2,9 @@
 
 class Hash {
 
+    public const SHA256 = 'sha256';
 
-
-    public static function make($string, $type = DEFAULT_HASH, $algo = 'sha256'){
+    public static function make($string, $type = DEFAULT_HASH, $algo = Hash::SHA256){
         if($type = DEFAULT_HASH){
             return hash($algo, $string);
         } else if ($type = PASSWORD_HASH){
@@ -16,7 +16,7 @@ class Hash {
 
 
     
-    public static function check($string, $hash, $type = DEFAULT_HASH, $algo = 'sha256'){
+    public static function check($string, $hash, $type = DEFAULT_HASH, $algo = Hash::SHA256){
         if ($type == DEFAULT_HASH){
             if ( $hash == self::make($string, $type, $algo) ) {
                 return true;
