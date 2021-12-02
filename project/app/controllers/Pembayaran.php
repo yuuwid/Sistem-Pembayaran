@@ -1,6 +1,6 @@
 <?php 
 
-class PembayaranBPP extends Controller implements ControllerInterface {
+class Pembayaran extends Controller implements ControllerInterface {
 
 
     
@@ -37,6 +37,26 @@ class PembayaranBPP extends Controller implements ControllerInterface {
         $this->view('partials/dashboard_header', $data);
         $this->view('partials/dashboard_sidebar', $data);
         $this->view('pembayaran/bpp', $data);
+        $this->view('partials/dashboard_footer');
+    }
+
+    public function nonbpp(){
+        if (!Authentication::getLogged()) {
+            Redirect::to("login");
+        }
+
+        $jenis_pembayaran = $this->model('Pembayaran_Model') -> jenis_pembayaran();
+
+        $data = [
+            "title" => 'Pembayaran Non-BPP',
+            'user' => Authentication::getUser(),
+            'jenis_pembayaran' => $jenis_pembayaran,
+        ];
+
+        
+        $this->view('partials/dashboard_header', $data);
+        $this->view('partials/dashboard_sidebar', $data);
+        $this->view('pembayaran/nonbpp', $data);
         $this->view('partials/dashboard_footer');
     }
 

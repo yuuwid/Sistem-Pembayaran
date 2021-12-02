@@ -1,6 +1,7 @@
 <?php
 $user = $data['user'];
-$month = Date::rangeMonth(6);
+$jenis_pembayaran = $data['jenis_pembayaran'];
+
 ?>
 
 <div class="container ps-5 pe-5">
@@ -21,15 +22,13 @@ $month = Date::rangeMonth(6);
                 <label class="form-label mt-2">Jurusan</label>
                 <input type="text" class="form-control" value="<?= $user['jurusan'] ?>" disabled>
 
-
-                <!-- Tunggakan form -->
-
-                <label for="inputBulan" class="form-label mt-2">Bulan</label>
+                <label for="inputBulan" class="form-label mt-2">Keperluan</label>
                 <select id="inputBulan" class="form-select">
                     <option selected id="null">Choose...</option>
-                    <?php foreach ($month as $m) : ?>
-                        <option id="<?= Generate::slugify($m) ?>"><?= $m ?></option>
-                    <?php endforeach; ?>
+                    <option id="her-reg">Her Registrasi</option>
+                    <option id="praktikum">Praktikum</option>
+                    <option id="lainnya">Lainnya</option>
+                    
                 </select>
                 <input type="hidden" name="jenis" value="bpp">
 
