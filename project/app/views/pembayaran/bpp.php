@@ -1,6 +1,6 @@
 <?php
 $user = $data['user'];
-$month = Date::rangeMonth(6);
+$month = $data['month'];
 ?>
 
 <div class="container ps-5 pe-5">
@@ -10,7 +10,7 @@ $month = Date::rangeMonth(6);
         <hr>
 
         <div>
-            <form class="g-3" action="<?= URL ?>/bayar" method="POST">
+            <form class="g-3" action="<?= URL ?>/pembayaran/securedpaymentbpp" method="POST">
 
                 <label class="form-label">Nama Lengkap</label>
                 <input type="text" class="form-control" value="<?= $user['nama'] ?>" disabled>
@@ -21,17 +21,23 @@ $month = Date::rangeMonth(6);
                 <label class="form-label mt-2">Jurusan</label>
                 <input type="text" class="form-control" value="<?= $user['jurusan'] ?>" disabled>
 
-
-                <!-- Tunggakan form -->
-
-                <label for="inputBulan" class="form-label mt-2">Bulan</label>
-                <select id="inputBulan" class="form-select">
-                    <option selected id="null">Choose...</option>
-                    <?php foreach ($month as $m) : ?>
-                        <option id="<?= Generate::slugify($m) ?>"><?= $m ?></option>
+                <label for="inputKelas" class="form-label mt-2">Kelas</label>
+                <select id="inputKelas" name="id_jenis" class="form-select">
+                    <?php foreach ($data['jenis_pembayaran'] as $jenis) : ?>
+                        <option value="<?= $jenis['id'] ?>"><?= $jenis['jenis'] ?>  ( Rp.<?= Generate::rupiah($jenis['biaya']) ?> )</option>
                     <?php endforeach; ?>
                 </select>
-                <input type="hidden" name="jenis" value="bpp">
+
+                <label for="inputBulan" class="form-label mt-2">Bulan</label>
+                <select id="inputBulan" name="keterangan" class="form-select">
+                    <?php foreach ($month as $m) : ?>
+                        <option value="<?= $m ?>"><?= $m ?></option>
+                    <?php endforeach; ?>
+                </select>
+
+                <input type="hidden" name="id_user" value="<?= $user['id'] ?>">
+                <input type="hidden" name="npm" value="<?= $user['npm'] ?>">
+                <input type="hidden" name="token" value="<?= $data['token'] ?>">
 
                 <button type="submit" class="btn btn-midnight hover-gold mt-3 ms-auto">Bayar</button>
             </form>

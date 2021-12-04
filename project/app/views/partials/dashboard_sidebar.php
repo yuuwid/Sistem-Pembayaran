@@ -15,10 +15,10 @@
                 <a href="<?= URL ?>"><span class="bi bi-house"></span> Home</a>
             </li>
             <li>
-                <a href="<?= URL ?>/pembayaranbpp"><span class="bi bi-wallet2"></span> Pembayaran BPP</a>
+                <a href="<?= URL ?>/pembayaran/bpp"><span class="bi bi-wallet2"></span> Pembayaran BPP</a>
             </li>
             <li>
-                <a href="<?= URL ?>"><span class="bi bi-wallet"></span> Pembayaran Non-BPP</a>
+                <a href="<?= URL ?>/pembayaran/nonbpp"><span class="bi bi-wallet"></span> Pembayaran Non-BPP</a>
             </li>
         </ul>
 
@@ -27,7 +27,7 @@
                 <a href="<?= URL ?>/profile"><span class="bi bi-person"></span> Profile</a>
             </li>
             <li>
-                <a href="<?= URL ?>"><span class="bi bi-hourglass-split"></span> Status Pembayaran</a>
+                <a href="<?= URL ?>/akun/status_pembayaran"><span class="bi bi-hourglass-split"></span> Status Pembayaran</a>
             </li>
         </ul>
     </nav>
@@ -49,7 +49,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="nav navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="<?= URL ?>/home/logout">Keluar</a>
+                            <a class="nav-link" href="<?= URL ?>/akun/logout">Keluar</a>
                         </li>
                     </ul>
                 </div>

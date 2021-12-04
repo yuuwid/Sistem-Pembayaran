@@ -13,8 +13,8 @@
             <td><?= $data['user']['jurusan'] ?></td>
         </tr>
         <tr>
-            <td>Tunggakan</td>
-            <td>Rp. <?= Generate::rupiah($data['user']['tunggakan']) ?></td>
+            <td>Status BPP</td>
+            <td><?= $data['user']['status_bpp'] ?></td>
         </tr>
     </table>
 

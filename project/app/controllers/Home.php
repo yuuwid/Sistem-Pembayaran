@@ -13,22 +13,12 @@ class Home extends Controller implements ControllerInterface {
         $data = [
             "title" => 'Home',
             'user' => Authentication::getUser(),
-            
         ];
 
         $this->view('partials/dashboard_header', $data);
         $this->view('partials/dashboard_sidebar', $data);
         $this->view('home/index', $data);
         $this->view('partials/dashboard_footer');
-    }
-
-
-
-
-
-    public function logout(){
-        Session::drop("logged");
-        Redirect::to("login");
     }
 
 }

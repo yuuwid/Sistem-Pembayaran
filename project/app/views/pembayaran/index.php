@@ -3,7 +3,7 @@
 <div class="container ps-5 pe-5">
 
     <div class="card mb-3">
-        <a href="<?= URL ?>/pembayaranbpp/bpp" class="hover-skyblue link-hover-gold">
+        <a href="<?= URL ?>/pembayaran/bpp" class="hover-skyblue link-hover-gold">
             <div class="row g-0">
                 <div class="col-md-4">
                     <img src="<?= PUBLIC_URL ?>/images/logo.png" class="img-fluid rounded-start p-3">
@@ -19,7 +19,7 @@
     </div>
 
     <div class="card mb-3">
-        <a href="<?= URL ?>/pembayaranbpp/nonbpp" class="hover-spring link-hover-violet">
+        <a href="<?= URL ?>/pembayaran/nonbpp" class="hover-spring link-hover-violet">
             <div class="row g-0">
                 <div class="col-md-8">
                     <div class="card-body">
