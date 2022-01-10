@@ -51,10 +51,10 @@ $pembayaran = $data['pembayaran'];
                     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
                             <ol>
-                                <li>Masukan ke mobile bankink atau sejenisny</li>
+                                <li>Masukan ke mobile banking atau sejenisnya</li>
                                 <li>Pilih menu <b>TRANSAKSI LAINNYA > TRANSFER > KE REKENING VIRTUAL ACCOUNT</b></li>
                                 <li>Masukan <b><?= $data['va'] ?></b> sebagai rekening tujuan</li>
-                                <li>Ikuti instruksi ntuk menyelesaikan transaksi</li>
+                                <li>Ikuti instruksi untuk menyelesaikan transaksi</li>
                             </ol>
                         </div>
                     </div>
