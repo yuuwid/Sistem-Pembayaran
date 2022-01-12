@@ -29,6 +29,7 @@ class Login extends Controller implements ControllerInterface {
             $status = $model->login($auth);
 
             if ($status != false) {
+                $status['password'] = '';
                 Session::make("logged", json_encode($status));
 
                 Redirect::to("home");

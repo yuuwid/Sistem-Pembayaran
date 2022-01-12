@@ -53,15 +53,24 @@ a:focus {
 }
 
 #sidebar {
-  min-width: 300px;
-  max-width: 300px;
+  min-width: 250px;
+  max-width: 250px;
   background: #004280;
   color: #fff;
   transition: all 0.3s;
 }
 
+#sidebar .pics {
+  width: 90%; 
+  height: 250px; 
+  margin: 10px; 
+  margin-bottom: 20px;
+  margin-left: +12px;
+  border-radius: 8px;
+}
+
 #sidebar.active {
-  margin-left: -300px;
+  margin-left: -250px;
 }
 
 #sidebar .sidebar-header {

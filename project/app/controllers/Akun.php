@@ -30,7 +30,7 @@ class Akun extends Controller implements ControllerInterface {
         $jenis_transaksi = [];
 
         foreach ($his_transaksi as $h){
-            $jenis_transaksi[] = $this->model('Pembayaran_Model')->get_jenis_pembayaran($h['id_jenis'])['jenis'];
+            $jenis_transaksi[] = $this->model('Pembayaran_Model')->get_jenis_pembayaran_byID($h['id_jenis'])['jenis'];
         }
 
         $data = [
@@ -40,8 +40,10 @@ class Akun extends Controller implements ControllerInterface {
             'jenis_transaksi' => $jenis_transaksi,
         ];
 
-        $this->view('partials/dashboard_header', $data);
-        $this->view('partials/dashboard_sidebar', $data);
+        $this->view('partials/main_header', $data);
+        $this->view('partials/main_navbar', $data);
+        // $this->view('partials/dashboard_header', $data);
+        // $this->view('partials/dashboard_sidebar', $data);
         $this->view('akun/status_pembayaran', $data);
         $this->view('partials/dashboard_footer');
         

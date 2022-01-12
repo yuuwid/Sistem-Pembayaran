@@ -8,7 +8,7 @@
     URL APP / WEBSITE
     if use local webserver, fill URL by name folder app
 */
-define('URL', 'http://localhost:8080/phpmvc/Sistem-Pembayaran/project');
+define('URL', 'http://localhost/phpmvc/Sistem-Pembayaran/project');
 
 
 

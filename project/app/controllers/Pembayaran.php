@@ -106,7 +106,7 @@ class Pembayaran extends Controller implements ControllerInterface
         } else {
             $token = explode('-', $kode_transaksi)[0];
             $data['no_transaksi'] = $kode_transaksi;
-            $data['total_biaya'] = $this->model('Pembayaran_Model')->get_jenis_pembayaran($data['id_jenis'])['biaya'];
+            $data['total_biaya'] = $this->model('Pembayaran_Model')->get_jenis_pembayaran_byID($data['id_jenis'])['biaya'];
             if (Cookie::take('secured-token') == $token){                
                 $this->model('Pembayaran_Model')->transaksi_baru($data);
                 Cookie::make('secured-token', 0, );
@@ -121,7 +121,7 @@ class Pembayaran extends Controller implements ControllerInterface
         $data = [
             "title" => 'Transaksi',
             'user' => Authentication::getUser(),
-            'jenis_tr' => $this->model('Pembayaran_Model')->get_jenis_pembayaran($pembayaran['id_jenis']),
+            'jenis_tr' => $this->model('Pembayaran_Model')->get_jenis_pembayaran_byID($pembayaran['id_jenis']),
             'total_biaya' => $reqData['total_biaya'],
             'pembayaran' => $pembayaran,
             'va' => (explode('-', $pembayaran['no_transaksi'])[0]) . 9 . (explode('-', $pembayaran['no_transaksi'])[1]),
@@ -143,7 +143,7 @@ class Pembayaran extends Controller implements ControllerInterface
         $data = [
             "title" => 'Transaksi',
             'user' => $user,
-            'jenis_tr' => $this->model('Pembayaran_Model')->get_jenis_pembayaran($pembayaran['id_jenis']),
+            'jenis_tr' => $this->model('Pembayaran_Model')->get_jenis_pembayaran_byID($pembayaran['id_jenis']),
             'total_biaya' => $pembayaran['total_biaya'],
             'pembayaran' => $pembayaran,
             'va' => (explode('-', $pembayaran['no_transaksi'])[0]) . 9 . (explode('-', $pembayaran['no_transaksi'])[1]),
