@@ -9,7 +9,7 @@
         </div>
 
         <ul class="list-unstyled components">
-            <img src="<?= PUBLIC_URL ?>/images/mahasiswa/<?= $data['user']['foto'] ?>" class="border border-white border-rounded border-2" alt="" style="width: 92%; height: 300px; margin: 10px; margin-bottom: 20px;">
+            <img src="<?= PUBLIC_URL ?>/images/mahasiswa/<?= $data['user']['foto'] ?>" class="border border-white border-rounded border-2 pics" alt=""">
 
             <li>
                 <a href="<?= URL ?>"><span class="bi bi-house"></span> Home</a>

@@ -8,10 +8,14 @@ class Pembayaran_Model extends Model
         parent::__construct();
     }
 
+    private function selectQuery($table)
+    {
+        return "SELECT * FROM {$table}";
+    }
 
     public function jenis_pembayaran($kode = null)
     {
-        $query = "SELECT * FROM jenis_pembayaran";
+        $query = $this->selectQuery("jenis_pembayaran");
         if ($kode != null) {
             $query = $query . " WHERE kode LIKE '{$kode}%'";
         }
@@ -21,9 +25,9 @@ class Pembayaran_Model extends Model
         return $this->_db->results();
     }
 
-    public function get_jenis_pembayaran($id)
+    public function get_jenis_pembayaran_byID($id)
     {
-        $query = "SELECT * FROM jenis_pembayaran WHERE id = {$id}";
+        $query = $this->selectQuery("jenis_pembayaran") . " WHERE id = {$id}";
 
         $this->_db->query($query, [], FETCH_SINGLE);
 
@@ -51,7 +55,7 @@ class Pembayaran_Model extends Model
 
     public function get_transaksi($key)
     {
-        $query = "SELECT * FROM history_pembayaran WHERE no_transaksi = :no_transaksi";
+        $query = $this->selectQuery("history_pembayaran") . " WHERE no_transaksi = :no_transaksi";
 
         $this->_db->query(
             $query,
@@ -65,7 +69,7 @@ class Pembayaran_Model extends Model
 
 
     public function getTransaksiUser($id_user) {
-        $query = "SELECT * FROM history_pembayaran WHERE id_user = {$id_user}";
+        $query = $this->selectQuery("history_pembayaran") . " WHERE id_user = {$id_user}";
         
         $this->_db->query(
             $query, [], FETCH_MULTI
